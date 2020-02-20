@@ -1,5 +1,139 @@
+/* INDICAZIONI GENERALI */
+
 * {
   padding: 0;
   margin: auto;
   box-sizing: border-box: ;
+}
+
+/* CONTENITORE SEZIONI + CLEARFIX */
+
+.container {
+  width: 80%;
+}
+
+.container::after {
+  content: "";
+  display:table;
+  clear: both;
+}
+
+/* NAV FISSA */
+
+.fixed-nav {
+  background-color: pink;
+  padding: 40px;
+}
+
+.left-nav ul li {
+  display: inline-block;
+  float: left;
+}
+
+.right-nav ul li {
+  display: inline-block;
+  float: right;
+}
+
+/* NAV "NORMALE" */
+
+.main-nav {
+  background-color: lightblue;
+  padding:40px;
+}
+
+.another-nav ul li {
+  display: inline-block;
+  float: right;
+}
+
+.logo {
+  float: left;
+}
+
+/*------------- FINE HEADER ------------------- */
+
+/* JUMBOTRON */
+
+.jumbo {
+  background-color: rgb(181, 182, 189);
+}
+
+.jumbo-text {
+  width: 50%;;
+  background-color: red;
+  float: left;
+}
+
+
+/* RUBICK */
+
+.rubick {
+  text-align: center;
+}
+
+.rubick-box {
+  width: 60%;
+}
+
+.rubick img {
+  width: 250px;
+  height: 200px;
+}
+
+
+/* CRM */
+
+.wrapper {
+  background-color: red;
+  float: left;
+  width: 15%;
+}
+
+.hub-description {
+  background-color: blue;
+  float: right;
+  width: 80%;
+}
+
+.crm {
+  background-color: orange;
+}
+
+.crm img {
+  width: 300px;
+  height: 150px;
+}
+
+crm a {
+  display: block;
+}
+
+
+/* HUB */
+
+.hub {
+  background-color: rgb(13, 96, 156);
+}
+
+.hub-feature {
+  width: 20%;
+  float:left;
+  background-color: pink;
+}
+
+
+/* GRID */
+
+.grid {
+  background-color: rgb(7, 131, 109);
+}
+
+.first-grid {
+  background-color: rgb(199, 228, 130);
+
+}
+
+.second-grid {
+  background-color: rgb(84, 75, 119);
 }
