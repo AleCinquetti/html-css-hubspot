@@ -19,9 +19,7 @@
   clear: both;
 }
 
-
 /* -------------------HEADER------------------------- */
-
 
 /* NAV FISSA */
 
@@ -30,13 +28,14 @@
   background-color: #f5f8fa;
   border-bottom: 0.2px solid rgb(200, 203, 202);
   position: fixed;
-  top: 0;
-  left: 0;
+  top:0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 50;
   width: 100%;
 }
 
-
-/* Left*/
+/* Left */
 
 .left-nav ul li i {
   font-size: 20px;
@@ -56,8 +55,6 @@
   font-size: 16px;
   font-weight: 400;
 }
-
-/* Right */
 
 .right-nav ul li {
   display: inline-block;
@@ -94,14 +91,17 @@
   margin-left: 10px;
 }
 
-
-
 /* NAV "NORMALE" */
 
 .main-nav {
   background-color: white;
   padding: 40px;
   margin-top: 100px;
+  position: relative;
+  top:0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
 }
 
 .another-nav ul li {
@@ -117,16 +117,11 @@
   font-weight: 600;
 }
 
-.logo-img {
+.logo {
   float: left;
 }
 
-.logo {
-  padding: 0;
-}
-
 /*------------- FINE HEADER ------------------- */
-
 
 
 /* JUMBOTRON */
@@ -135,7 +130,6 @@
   background-image: url(img/jumbotron.png);
   background-size: 1400px 695px;
   height: 695px;
-  background-repeat: no-repeat;
 }
 
 .jumbo-text {
@@ -178,22 +172,19 @@
 }
 
 
-
 /* RUBICK */
 
 .rubick {
   text-align: center;
   background-color: #f5f8fa;
   padding: 100px 0;
-}
 
-.rubick img {
-  width: 250px;
-  height: 200px;
 }
 
 .rubick-box {
   width: 60%;
+
+
 }
 
 .rubick-box h2 {
@@ -211,27 +202,17 @@
   color: #33475b;
 }
 
+.rubick img {
+  width: 250px;
+  height: 200px;
+}
 
 
 /* CRM */
 
 .crm {
   padding-top: 50px;
-  background-color: #f5f8fa;
  }
-
- .crm img {
-   width: 300px;
-   height: 150px;
- }
-
- .crm #white {
-   background-color: white;
-   padding: 50px 0 60px 0;
-   border-radius: 2px;
- }
-
-/* Parte sinistra della sezione */
 
 .wrapper {
   float: left;
@@ -239,10 +220,6 @@
   text-align: center;
   background-color: white;
   margin-left: 40px;
-}
-
-.wrapper img {
-  margin-bottom: 40px;
 }
 
 .wrapper a {
@@ -257,7 +234,9 @@
 
 }
 
-/* Parte destra della sezione */
+.wrapper img {
+  margin-bottom: 40px;
+}
 
 .hub-description {
   float: right;
@@ -299,7 +278,24 @@
   color: #ff7a59;
 }
 
+.crm {
+  background-color: #f5f8fa;
+}
 
+.crm img {
+  width: 300px;
+  height: 150px;
+}
+
+crm a {
+  display: block;
+}
+
+.crm #white {
+  background-color: white;
+  padding: 50px 0 60px 0;
+  border-radius: 2px;
+}
 
 /* HUB */
 
@@ -307,8 +303,6 @@
   background-color: #f5f8fa;
   padding-bottom: 75px;
 }
-
-/* struttura singolo box */
 
 .hub-feature {
   width: 23%;
@@ -318,6 +312,11 @@
   padding: 50px 40px 50px 40px;
   margin-top: 47.5px;
   border-radius: 2px;
+}
+
+.hub #second {
+  margin-left: 47.5px;
+  margin-right: 47.5px;
 }
 
 
@@ -380,17 +379,6 @@
 }
 
 
-
-/* Fine struttura box */
-
-/* Box centrale */
-.hub #second {
-  margin-left: 47.5px;
-  margin-right: 47.5px;
-}
-
-
-
 /* GRID */
 
 .grid {
@@ -399,7 +387,6 @@
   padding-bottom: 100px;
 }
 
-/* Div con titolo e paragrafo */
 .title {
   text-align: center;
   color: white;
@@ -419,8 +406,6 @@
   line-height: 1.7em;
 }
 
-/* Stile griglia */
-
 .first-grid .infobox {
   border-bottom: 1px solid white;
 }
@@ -428,8 +413,6 @@
 #border {
   border-right: 1px solid white;
 }
-
-/* Stile singolo elemento della griglia */
 
 .infobox {
   width: 18.6%;
@@ -451,16 +434,12 @@
 }
 
 
-
-
 /* SPONSOR */
 
 .sponsor {
   padding-top: 100px;
   padding-bottom: 70px;
 }
-
-/* Parte sinistra con dato e paragrafo */
 
 .data {
   width: 30%;
@@ -479,8 +458,6 @@
   font-weight: 300;
   line-height: 1.8em;
 }
-
-/* Parte destra con griglia sponsor */
 
 .sponsor-grid {
   width: 60%;
@@ -502,8 +479,6 @@
   padding-top: 100px;
   padding-bottom: 120px;
 }
-
-/* parte sinistra con didascalia */
 
 .customer-text {
   color: #33475b;
@@ -541,10 +516,9 @@
   margin-top: 50px;
 }
 
-/* Parte destra con immagine persona */
-
 .customer-image {
   float: right;
+  /* width: 40%; */
 }
 
 .customer-image img {
@@ -552,18 +526,13 @@
   height: 420px;
 }
 
-
-
 /* FOOTER */
-
-/* HIGH FOOTER: 4 liste uguali */
 
 .high-footer {
   background-color: #33475b;
   padding-top: 100px;
 }
 
-/* Stile lista singola */
 .footer-nav ul {
   float: left;
   width: 24%;
@@ -590,25 +559,10 @@
   color: #cbd6e2;
 }
 
-
-/* MID FOOTER: link social */
-
  .mid-footer {
   padding-top: 30px;
   background-color: #33475b;
 }
-/* Contenitore più largo: nuova regola clearfix del div */
-.social-container {
-  width: 90%;
-}
-
-.social-container::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Stile link social  */
 
 .mid-footer #support {
   font-size: 14px;
@@ -620,7 +574,15 @@
   text-decoration: none;
 }
 
-/* Mid-footer box: contiene link supporto e link social  */
+.social-container {
+  width: 90%;
+}
+
+.social-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .mid-footer-box {
   float: right;
@@ -637,16 +599,10 @@
   color: #cbd6e2;
 }
 
-
-/* LOW FOOTER: lingue e copyright */
-
-
 .low-footer {
   background-color: #33475b;
   padding-bottom: 50px;
 }
-
-/* Stile lingue */
 
 .lang ul {
   text-align: center;
@@ -661,9 +617,6 @@
   font-weight: 600;
   color: #cbd6e2;
 }
-
-
-/* Logo e copyright */
 
 .grey-logo {
   float: left;
