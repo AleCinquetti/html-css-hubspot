@@ -56,6 +56,9 @@
   font-weight: 400;
 }
 
+
+/* Right */
+
 .right-nav ul li {
   display: inline-block;
   float: right;
@@ -90,6 +93,8 @@
   text-decoration: none;
   margin-left: 10px;
 }
+
+
 
 /* NAV "NORMALE" */
 
@@ -178,13 +183,10 @@
   text-align: center;
   background-color: #f5f8fa;
   padding: 100px 0;
-
 }
 
 .rubick-box {
   width: 60%;
-
-
 }
 
 .rubick-box h2 {
@@ -208,11 +210,31 @@
 }
 
 
+
 /* CRM */
 
 .crm {
   padding-top: 50px;
+  background-color: #f5f8fa;
  }
+
+ .crm img {
+   width: 300px;
+   height: 150px;
+ }
+
+ crm a {
+   display: block;
+ }
+
+ .crm #white {
+   background-color: white;
+   padding: 50px 0 60px 0;
+   border-radius: 2px;
+ }
+
+
+/* Sezione di sinistra (immagine + link) */
 
 .wrapper {
   float: left;
@@ -237,6 +259,8 @@
 .wrapper img {
   margin-bottom: 40px;
 }
+
+/* Destra: descrizione */
 
 .hub-description {
   float: right;
@@ -278,24 +302,8 @@
   color: #ff7a59;
 }
 
-.crm {
-  background-color: #f5f8fa;
-}
 
-.crm img {
-  width: 300px;
-  height: 150px;
-}
 
-crm a {
-  display: block;
-}
-
-.crm #white {
-  background-color: white;
-  padding: 50px 0 60px 0;
-  border-radius: 2px;
-}
 
 /* HUB */
 
@@ -303,6 +311,13 @@ crm a {
   background-color: #f5f8fa;
   padding-bottom: 75px;
 }
+
+.hub #second {
+  margin-left: 47.5px;
+  margin-right: 47.5px;
+}
+
+/* Stile box "colonna" */
 
 .hub-feature {
   width: 23%;
@@ -313,12 +328,6 @@ crm a {
   margin-top: 47.5px;
   border-radius: 2px;
 }
-
-.hub #second {
-  margin-left: 47.5px;
-  margin-right: 47.5px;
-}
-
 
 .hub-feature img {
   width: 250px;
@@ -342,7 +351,6 @@ crm a {
   border-bottom: 0.2px solid rgb(200, 203, 202);
   padding-bottom: 20px;
 }
-
 
 .hub-feature h4 {
   font-size: 13px;
@@ -387,6 +395,8 @@ crm a {
   padding-bottom: 100px;
 }
 
+/* Sezione titolo e paragrafo */
+
 .title {
   text-align: center;
   color: white;
@@ -414,6 +424,9 @@ crm a {
   border-right: 1px solid white;
 }
 
+
+/* struttura singolo box della griglia */
+
 .infobox {
   width: 18.6%;
   text-align: center;
@@ -434,6 +447,7 @@ crm a {
 }
 
 
+
 /* SPONSOR */
 
 .sponsor {
@@ -441,6 +455,7 @@ crm a {
   padding-bottom: 70px;
 }
 
+/* Sinistra: didascalia */
 .data {
   width: 30%;
   color: #33475b;
@@ -458,6 +473,8 @@ crm a {
   font-weight: 300;
   line-height: 1.8em;
 }
+
+/* Destra: Griglia sponsor */
 
 .sponsor-grid {
   width: 60%;
@@ -479,6 +496,8 @@ crm a {
   padding-top: 100px;
   padding-bottom: 120px;
 }
+
+/* Sinistra: titolo e paragrafo */
 
 .customer-text {
   color: #33475b;
@@ -516,9 +535,10 @@ crm a {
   margin-top: 50px;
 }
 
+/* Destra: immagine persona */
+
 .customer-image {
   float: right;
-  /* width: 40%; */
 }
 
 .customer-image img {
@@ -528,10 +548,15 @@ crm a {
 
 /* FOOTER */
 
+
+/* HIGH FOOTER: liste link utili */
+
 .high-footer {
   background-color: #33475b;
   padding-top: 100px;
 }
+
+/* Stile singola lista (1 di 4) */
 
 .footer-nav ul {
   float: left;
@@ -559,6 +584,8 @@ crm a {
   color: #cbd6e2;
 }
 
+/* MID FOOTER: link social */
+
  .mid-footer {
   padding-top: 30px;
   background-color: #33475b;
@@ -573,6 +600,8 @@ crm a {
   border-radius: 3px;
   text-decoration: none;
 }
+
+/* Clearfix div social (width diversa da "container") */
 
 .social-container {
   width: 90%;
@@ -599,10 +628,14 @@ crm a {
   color: #cbd6e2;
 }
 
+/* LOW FOOTER: languages e copyright */
+
 .low-footer {
   background-color: #33475b;
   padding-bottom: 50px;
 }
+
+/* Languages */
 
 .lang ul {
   text-align: center;
@@ -617,6 +650,8 @@ crm a {
   font-weight: 600;
   color: #cbd6e2;
 }
+
+/* Copyright */
 
 .grey-logo {
   float: left;
