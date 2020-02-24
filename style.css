@@ -48,20 +48,40 @@
   font-size: 14px;
 }
 
-.left-nav ul li {
+.left-nav .left {
   display: inline-block;
   float: left;
   margin-right: 20px;
 }
 
-.left-nav li a {
+.left-nav .left a {
   text-decoration: none;
-  padding-right: 30px;
   color: #33475b;
   font-size: 16px;
   font-weight: 400;
 }
 
+
+/* INDICAZIONI MENU TENDINA LINGUE */
+.lang-dropdown {
+  position: absolute;
+  left: 12.2%;
+  background-color: white;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 3px;
+  border: 1.5px solid rgb(200, 203, 202);
+  display: none;
+}
+
+.lang-dropdown ul li {
+  list-style: none;
+  padding: 7px;
+}
+
+.left-nav #language:hover .lang-dropdown {
+  display: block;
+}
 
 
 /* Right */
@@ -76,6 +96,7 @@
   font-size: 20px;
   color: rgb(6, 151, 232);
   padding: 1px;
+  cursor: pointer;
 }
 
 .right-nav li a, li i {
