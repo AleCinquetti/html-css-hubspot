@@ -24,8 +24,29 @@
           <nav class="left-nav">
 
             <ul>
-              <li><a href="#"><i class="fas fa-globe-europe"></i>English</a></li>
-              <li><a href="#">Contact Sales</a></li>
+
+              <li>   <!-- ENGLISH -->
+                <a href="#">
+
+                  <!-- <div class="lang-dropdown">
+                    <ul>
+                      <li><a href="#">日本語</a></li>
+                      <li><a href="#">Deutsch</a></li>
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Español</a></li>
+                      <li><a href="#">Português</a></li>
+                      <li><a href="#">Français</a></li>
+                    </ul>
+                  </div> -->
+
+                  <i class="fas fa-globe-europe"></i>English<i id="lang" class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+
+              <li>   <!-- CONTACT SALES -->
+                <a href="#">Contact Sales</a>
+              </li>
+
             </ul>
 
           </nav>
@@ -34,9 +55,11 @@
           <nav class="right-nav">
 
             <ul>
-              <li><a id="getfree" href="#">GetHubspotFree</a></li>
+              <li><a class="getfree" href="#">GetHubspotFree</a></li>
               <li><a id="login" href="#">Log in</a></li>
-              <li><i class="fas fa-search"></i></li>
+              <li>
+                <i class="fas fa-search"></i>
+              </li>
             </ul>
 
           </nav>
@@ -56,22 +79,212 @@
 
           <nav class="another-nav">
 
-            <ul>
+            <ul class="another-main-nav">
 
-              <li><a href="#">About</a></li>
-              <li><a href="#">Partners</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Software</a></li>
+
+              <!-- ABOUT -->
+              <li class="another-main-nav">
+                <a id="about" href="#">
+
+                  <section class="about-dropdown">
+
+                    <div class="about-list">
+
+                      <ul>
+                        <h5>Company</h5>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Management Team</li>
+                        <li>Board of Directors</li>
+                        <li>Careers</li>
+                      </ul>
+                    </div>
+
+                    <div class="about-list">
+                      <ul>
+                        <h5>News</h5>
+                        <li>HubSpot News</li>
+                        <li>Press Resources</li>
+                        <li>Speakers</li>
+                      </ul>
+                    </div>
+
+                    <div class="about-list">
+                      <ul>
+                        <h5>Investors</h5>
+                        <li>Investor Relations</li>
+                      </ul>
+                    </div>
+
+                  </section>
+
+                  About
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+
+
+              <!-- PARTNERS -->
+              <li class="another-main-nav">
+                <a id="part" href="#">
+
+<!------------- Menu tendina list item PARTNERS ------------------------------>
+                    <section class="partners-dropdown">
+                      <div class="main" id="partners">
+                        <div class="sub-box" id="large-box">
+                          <h3>Blog</h3>
+                          <p>Read marketing, sales, agency, and customer success blog content.
+                          </p>
+                        </div>
+
+                        <div class="sub-box" id="large-box">
+                          <h3>Customer Stories</h3>
+                          <p>Hear from the businesses that use HubSpot to grow better every day.
+                          </p>
+                        </div>
+                    </section>
+<!------------- Fine Menu tendina list item PARTNERS ------------------------------>
+
+                Partners<i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+
+
+              <!-- RESOURCES -->
+              <li class="another-main-nav">
+                <a id="resources" href="#">
+
+<!------------- Menu tendina list item RESOURCES ------------------------------>
+                    <section class="dropdown">
+
+                      <div class="main">
+
+                        <div class="sub-box">
+                          <h3>Blog</h3>
+                          <p>Read marketing, sales, agency, and customer success blog content.
+                          </p>
+                        </div>
+
+                        <div class="sub-box">
+                          <h3>Customer Stories</h3>
+                          <p>Hear from the businesses that use HubSpot to grow better every day.
+                          </p>
+                        </div>
+
+                        <div class="sub-box">
+                          <h3>Developers <span id="new">New</span></h3>
+                          <p>Create apps and custom integrations for businesses using HubSpot.</p>
+                        </div>
+
+                      </div>
+
+                      <div class="main" id="second-row">
+
+                        <div class="sub-box">
+                          <h3>Ebooks, Guides & More</h3>
+                          <p>Get access to HubSpot’s most popular marketing resources.
+                          </p>
+                        </div>
+
+                        <div class="sub-box">
+                          <h3>Onboarding & Services</h3>
+                          <p>Find training and consulting services to help you thrive with HubSpot.
+                          </p>
+                        </div>
+
+                        <div class="sub-box">
+                          <h3>Research & Reports</h3>
+                          <p>Get up-to-date research and data on hot business trends.</p>
+                        </div>
+
+                      </div>
+
+                      <div class="main" id="third-row">
+
+                        <div class="sub-box">
+                          <h3>Free Courses & Certifications</h3>
+                          <p>Take courses on the latest business trends, taught by industry experts.
+                          </p>
+                        </div>
+
+                        <div class="sub-box">
+                          <h3>What Is Inbound?</h3>
+                          <p>Get a primer on how inbound helps your business grow better.
+                          </p>
+                        </div>
+
+                        <div class="sub-box">
+                          <h3>Customer Support</h3>
+                          <p>Get help if you have questions about using HubSpot software.</p>
+                        </div>
+
+                      </div>
+
+                    </section>
+<!-------------Fine Menu tendina list item RESOURCES ------------------------------>
+
+                  Resources
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+
+              <!-- PRICING -->
+              <li class="another-main-nav"><a href="#">Pricing</a></li>
+
+
+              <!-- SOFTWARE -->
+              <li class="another-main-nav">
+                <a id="software" href="#">
+
+<!----------- menu a tendina list item SOFTWARE --------------------->
+                <section class="dropdown">
+
+                  <div class="header">
+                    <h3>Free HubSpot CRM</h3>
+                    <p>All your contacts and companies, <strong>100% free.</strong>
+                    </p>
+                  </div>
+
+                  <div class="main">
+
+                    <div class="sub-box">
+                      <h3>Marketing Hub</h3>
+                      <p>All-in-one marketing software, starting at <span>$0/month.</span>
+                      </p>
+                    </div>
+
+                    <div class="sub-box">
+                      <h3>Sales Hub</h3>
+                      <p>All-in-one sales software, starting at <span>$0/month.</span>
+                      </p>
+                    </div>
+
+                    <div class="sub-box">
+                      <h3>Service Hub</h3>
+                      <p>All-in-one customer service software, starting at <span>$0/month.</span>
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <div class="footer">
+                    <h3><span>NEW</span>App Marketplace</h3>
+                    <p>Find HubSpot apps for the tools and software you use to run your business.</p>
+                  </div>
+
+                </section>
+<!-- Fine menu tendina SOFTWARE -------------------------------------------->
+
+                Software
+
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
 
             </ul>
-
           </nav>
-
       </div>
-
     </nav>
-
   </header>
 
   <!------------------- MAIN -------------------------->
@@ -91,7 +304,7 @@
           <p>Marketing, sales, and service software that helps your business grow without compromise. Because “good for the business” should also mean “good for the customer.”
           </p>
 
-          <a href="#" class="hubfree">Get Hubspot Free</a>
+          <a class="getfree" href="#" class="hubfree">Get Hubspot Free</a>
 
           <p id="free-tools">Get started with FREE tools, and upgrade as you grow.
           </p>
@@ -127,7 +340,7 @@
         <div class="wrapper">
 
           <img src="img/book.svg" alt="book" class="book">
-          <a  href="#">Learn More</a>
+          <a class="getfree" href="#">Learn More</a>
 
         </div>
 
@@ -178,7 +391,7 @@
             <li><i class="fas fa-check-circle"></i>Analytics</li>
           </ul>
 
-          <a href="">Get Started</a>
+          <a class="getfree" href="">Get Started</a>
 
         </div>
 
@@ -201,7 +414,7 @@
             <li><i class="fas fa-check-circle"></i>Email Automation</li>
           </ul>
 
-          <a href="">Get Started</a>
+          <a class="getfree" href="">Get Started</a>
 
         </div>
 
@@ -221,7 +434,7 @@
             <li><i class="fas fa-check-circle"></i>Knowledge Base</li>
           </ul>
 
-          <a href="#">Get Started</a>
+          <a class="getfree" href="#">Get Started</a>
 
         </div>
 
@@ -373,7 +586,7 @@
         <div class="customer-text">
           <h2>Start Growing With HubSpot Today</h2>
           <p>With tools to make every part of your process more human and a support team excited to help you, getting started with inbound has never been easier.</p>
-          <a href="#">Get HubSpot free</a>
+          <a class="getfree" href="#">Get HubSpot free</a>
           <p id="free">Get started with FREE tools, or get more with our premium software.</p>
         </div>
 
@@ -540,8 +753,5 @@
     </div>
 
   </footer>
-
-
-
   </body>
 </html>

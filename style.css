@@ -38,8 +38,14 @@
 /* Left */
 
 .left-nav ul li i {
-  font-size: 20px;
+  font-size: 18px;
   padding: 0 10px 0 0;
+}
+
+.left-nav ul li #lang {
+  padding-left: 7px;
+  padding-top: 3px;
+  font-size: 14px;
 }
 
 .left-nav ul li {
@@ -57,6 +63,7 @@
 }
 
 
+
 /* Right */
 
 .right-nav ul li {
@@ -68,6 +75,7 @@
 .right-nav ul i {
   font-size: 20px;
   color: rgb(6, 151, 232);
+  padding: 1px;
 }
 
 .right-nav li a, li i {
@@ -85,13 +93,23 @@
   margin-left: 40px;
 }
 
-.right-nav ul li #getfree {
+.right-nav ul li #login:hover {
+  background: rgb(255, 230, 250);
+  transition: 0.8s ease;
+}
+
+.right-nav ul li .getfree {
   color: white;
   background-color: #ff7a59;
   padding: 15px 20px;
   border-radius: 3px;
   text-decoration: none;
   margin-left: 10px;
+}
+
+.getfree:hover {
+  opacity: 0.5;
+  transition: 0.8s ease;
 }
 
 
@@ -109,12 +127,12 @@
   width: 100%;
 }
 
-.another-nav ul li {
+.another-nav .another-main-nav {
   display: inline-block;
   float: right;
 }
 
-.another-nav li a {
+.another-nav .another-main-nav a {
   text-decoration: none;
   padding-left: 50px;
   color: #33475b;
@@ -122,9 +140,250 @@
   font-weight: 600;
 }
 
+.another-nav li i {
+  padding-left: 7px;
+  padding-top: 3px;
+  font-size: 14px;
+}
+
+/* ----------INIZIO INDICAZIONI MENU A TENDINA--------------- */
+
+
+/* GENERALI SOFTWARE-RESOURCES */
+.dropdown {
+  width: 60%;
+  border: 1.5px solid rgb(200, 203, 202);
+  margin-top: 30px;
+  padding: 0 20px;
+  position: absolute;
+  left: 25%;
+  background-color: white;
+  color: #33475b;
+  border-radius: 3px;
+  display: none;
+}
+
+/* INDICAZIONI PER HOVER */
+.another-nav li #software:hover .dropdown {
+  display: block;
+}
+
+.another-nav li #resources:hover .dropdown {
+  display: block;
+}
+
+.another-nav li #part:hover .partners-dropdown {
+  display: block;
+}
+
+.another-nav li #about:hover .about-dropdown {
+  display: block;
+}
+
+
+
+
+/*TENDINA SOFTWARE */
+.header {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 0.5px solid rgb(200, 203, 202);
+}
+
+.header p {
+  font-weight: 300;
+}
+
+.header h3 {
+  margin-bottom: 10px;
+}
+
+.main {
+  padding: 40px 5px;
+  /* border-bottom: 0.5px solid rgb(200, 203, 202); */
+}
+
+#second-row, #third-row {
+  border-top: 0.5px solid rgb(200, 203, 202);
+}
+
+.main p {
+  font-weight: 300;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 0.5px solid rgb(200, 203, 202);
+}
+
+.footer h3 {
+  float: left;
+  padding: 0 15px;
+  margin-left: 14%;
+}
+
+.footer p {
+  float: left;
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 300;
+}
+.footer span {
+  padding: 10px;
+  background-color: rgb(0, 157, 138);
+  color: white;
+  font-weight: 900;
+  font-size: 13px;
+  border-radius: 3px;
+  margin-right: 7px;
+}
+
+.footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* STRUTTURA BOX SOFTWARE, RESOURCES */
+.main p {
+  font-size: 13px;
+}
+
+.sub-box {
+  float: left;
+  width: 25%;
+  padding: 0 35px;;
+}
+
+.sub-box h3 {
+  margin-bottom: 10px;
+}
+
+.sub-box p {
+  line-height: 1.5em;
+}
+
+.sub-box span {
+  font-weight: 900;
+}
+
+.sub-box #new {
+  padding: 5px;
+  background-color: rgb(0, 157, 138);
+  color: white;
+  font-weight: 900;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-right: 7px;
+  text-transform: uppercase;
+}
+
+.main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* INDICAZIONI TENDINA PARTNERS */
+.partners-dropdown {
+  width: 50%;
+  border: 1.5px solid rgb(200, 203, 202);
+  margin-top: 30px;
+  padding: 0 20px;
+  position: absolute;
+  left: 35%;
+  background-color: white;
+  color: #33475b;
+  border-radius: 3px;
+  display: none;
+}
+
+#partners {
+  padding: 25px 5px;
+}
+
+#partners p {
+  font-size: 13px;
+}
+
+#large-box {
+  float: left;
+  width: 40%;
+  padding: 0 25px;;
+}
+
+#large-box h3 {
+  margin-bottom: 10px;
+}
+
+#large-box p {
+  line-height: 1.5em;
+}
+
+#partners::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* TENDINA ABOUT */
+
+.about-dropdown {
+  width: 38%;
+  border: 1.5px solid rgb(200, 203, 202);
+  border-radius: 3px;
+  margin-top: 30px;
+  padding: 0 12px;
+  position: absolute;
+  background: white;
+  left: 48%;
+  display: none;
+}
+
+.about-list {
+  float: left;
+  padding: 25px;
+}
+
+.about-list ul {
+  list-style: none;
+}
+
+.about-list ul li {
+  display: block;
+}
+
+.about-list h5 {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.about-list li {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 15px 0;
+}
+
+.about-dropdown::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* FINE INDICAZIONI DROPDOWN-MENU */
+
 .logo {
   float: left;
 }
+
+
+
 
 /*------------- FINE HEADER ------------------- */
 
